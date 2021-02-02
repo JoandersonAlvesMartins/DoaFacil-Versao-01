@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Configurando o body*/
+body{
+    margin: 0;
+    font-family: sans-serif; /* Fonte padrão*/
+}
+
+/* Configurando o layout do formulário*/
+.formulario{
+    width: 500px; /* Largura*/
+    max-width: 100%; /* Largura máxima*/
+    margin: auto; /* margem automática*/
+    margin-top: 20px; /* distânciamento do topo*/
+    padding: 25px; /* Tamanho da janela*/
+    box-shadow: 0 0 20px 1px rgba(0,0,0,0.3); /* Sombra do formulário com espaçamento, tamanho e transparência*/
+    position: relative; /* posicionamento do elemento formulario dentro da página*/
+}
+
+/* Configurando o titulo*/
+.formulario__titulo {
+    text-align: center;
+    margin-top: 0;
+    color: rgba(0,0,0,0.7);
+  }
+
+/* Configurando o formulario input, label e submit*/
+.formulario__input, .formulario__label, .formulario__submit {
+    display: block;
+    width: 100%;
+    font-size: 1.3em;
+  }
+
+/* Configurando o formulario input*/
+.formulario__input {
+    padding: 13px; /* tamanho do input*/
+    background: rgba(0,0,0,0.1);
+    border: 1px solid rgba(0,0,0,0.3);
+    margin-bottom: 25px;
+  }
+
+.formulario__input:focus {
+    outline: 1px solid rgba(0,0,0,0.7);
+  }
+
+.formulario__input:focus + .formulario__label{
+    margin-top: -103px; /* posicionamento do texto dentro do input*/
+  }
+
+/* Configurando o formulario label*/
+.formulario__label {
+    padding-left: 15px;
+    position: absolute;
+    margin-top: -65px; /*posicionamento do texto dentro do input*/
+    z-index: -20;
+    color: rgba(0,0,0,0.5);
+    transition: all 0.3s;
+  }
+
+/* Configurando o formulario submit*/
+.formulario__submit {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+  }
+
+/* texto acima da caixa do input quando houver caracteres dentro da caixa*/
+.fixar {
+    margin-top: -103px;
+  }
+
